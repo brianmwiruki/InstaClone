@@ -6,5 +6,5 @@ from .views import (
 app_name = 'insta'
 
 urlpatterns = [
-    path('', PostListView.as_view(),name= 'post_list')
+    path('', PostListView.as_view(),name= 'post_list'),
 ]
