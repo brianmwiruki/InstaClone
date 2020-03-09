@@ -79,3 +79,33 @@ header {
     top: 83px;
     left: 0;
 }
+
+.card {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 614px;
+    height: auto;
+    border: .8px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 60px;
+}
+
+.card_header {
+    padding: 10px;
+}
+
+.card_header a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile_image {
+    display: inline-block;
+    background-color: cornflowerblue;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    border: 0 solid #000;
+    border-radius: 50%;
+}
