@@ -22,5 +22,14 @@
     <div class="likes">
         <a href="">1000</a>
     </div>
+    <div class="caption">
+        <a href="">
+            <h2>{{ post.author }}</h2>
+        </a>
+        <span> <p>{{ post.caption }}</p> </span>
+    </div>
+    <div class="time_posted">
+        {{ post.created_date | timesince }} ago
+    </div>
 </div>
 {% endfor %} {% endblock %}
