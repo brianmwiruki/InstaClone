@@ -121,6 +121,7 @@ def new_image(request):
     return render(request, 'new_image.html', {"form": form})
 
 #user profile initialization
+
 @login_required(login_url='/accounts/login/')
 def user_profiles(request):
     current_user = request.user
@@ -139,7 +140,20 @@ def user_profiles(request):
     
     return render(request, 'registration/profile.html', {"form":form, "images":images})
 
-
+#likes
+@login_required(login_url='/accounts/login/')
+def like_image(request, id):
+    image = get_object_or_404(Image, id=request.POST.get('image_id'))
+    
+    is_liked = False
+    if image.likes.filter(id = request.user.id).exists():
+        image.likes.remove(request.user)
+        is_liked = False
+    else:
+        image.likes.add(request.user)
+        is_liked = True
+    
+    return ("home")
 
 class PostListView(ListView):
     template_name = 'insta/post_list.html'
