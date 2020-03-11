@@ -41,6 +41,8 @@ def home(request):
 
     return render(request, 'index.html', {"date": date, "images":images, "comments":comments, "form": form,})
 
+#registration
+
 def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
@@ -56,6 +58,20 @@ def register(request):
     else:
         form = RegisterForm()
     return render(request, 'registration/registration_form.html', {'form':form})
+
+#search functionality
+login_required(login_url='/accounts/login/')
+def search_images(request):
+    if 'keyword' in request.GET and request.GET["keyword"]:
+        search_term = request.GET.get("keyword")
+        searched_images = Image.search_images(search_term)
+        message = f"{search_term}"
+
+        return render(request, 'search.html', {"message":message,"images": searched_images})
+
+    else:
+        message = "Your search query was empty. Type something to search."
+        return render(request, 'search.html', {"message": message})
 
 
 class PostListView(ListView):
