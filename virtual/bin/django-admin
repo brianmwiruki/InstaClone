@@ -1,4 +1,4 @@
-#!/home/bryan/Documents/moringa-school-projects/Python/Django/ForgeStagram/virtual/bin/python3.8
+#!/home/bryan/Documents/moringa-school-projects/Python/Django/ForgeStagram/virtual/bin/python3.7
 # -*- coding: utf-8 -*-
 import re
 import sys
