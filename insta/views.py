@@ -39,7 +39,7 @@ def home(request):
     else:
         form = NewCommentForm(auto_id=False)
 
-    return render(request, 'index.html', {"date": date, "images":images, "comments":comments, "form": form,})
+    return render(request, "insta/index.html", {"date": date, "images":images, "comments":comments, "form": form,})
 
 #registration
 
@@ -67,11 +67,11 @@ def search_images(request):
         searched_images = Image.search_images(search_term)
         message = f"{search_term}"
 
-        return render(request, 'search.html', {"message":message,"images": searched_images})
+        return render(request, 'insta/search.html', {"message":message,"images": searched_images})
 
     else:
         message = "Your search query was empty. Type something to search."
-        return render(request, 'search.html', {"message": message})
+        return render(request, 'insta/search.html', {"message": message})
 
 #get image functionality for display
 
@@ -100,7 +100,7 @@ def get_image(request, id):
     else:
         form = NewCommentForm(auto_id=False)
     
-    return render(request, "all_images.html", {"image":image, "form":form, "comments":comments})
+    return render(request, "insta/all_images.html", {"image":image, "form":form, "comments":comments})
     
     
     # image post functionality 
@@ -118,7 +118,7 @@ def new_image(request):
 
     else:
         form = NewImageForm()
-    return render(request, 'new_image.html', {"form": form})
+    return render(request, 'insta/new_image.html', {"form": form})
 
 #user profile initialization
 
