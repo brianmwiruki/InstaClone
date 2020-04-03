@@ -4,12 +4,12 @@ from .models import Image
 # Create your tests here.
 
 class ImageTestCase(TestCase):
-    
+
     def setUp(self):
-        
+
         # Set up method
-        self.new_image= Image(image_name = 'Qlo', image_file ='media/images/qlo.jpg', caption ='QLo is a chatting app')
-       
+        self.new_image= Image(image_name = 'FrogeStagram', image_file ='media/images/qlo.jpg', caption ='FrogeStagram is a chatting app')
+
 
      # Testing  instance
     def test_is_instance(self):
