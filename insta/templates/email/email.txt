@@ -1,3 +1,0 @@
-Hello {{name}}
-
-Welcome to Forgestagram. Interact with people form all over the world by posting images, leaving a like and a comment on other people's posts. 
