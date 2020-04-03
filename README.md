@@ -1,11 +1,11 @@
-# QLo
+# FrogeStagram
 A Django generated app using the idea of Instagram with functionalities: User; signup - signin , image posting, liking, commenting and updating profile.
 
 ## Author
-* Evans Nyambane
+* Brian Mwiruki
 
 
-### QLo
+### FrogeStagram
 
 ![alt text](qlo.png)
 
@@ -19,7 +19,7 @@ A Django generated app using the idea of Instagram with functionalities: User; s
 
     - Caption
 
-* View image 
+* View image
 * Update profile
 
 
@@ -32,7 +32,7 @@ A Django generated app using the idea of Instagram with functionalities: User; s
 
 
 ## Output
-* Image 
+* Image
 * Comment
 * Image Caption
 * Image Liked
@@ -43,8 +43,8 @@ A Django generated app using the idea of Instagram with functionalities: User; s
   [Here's](https://www.python.org/) a brief intro about what a developer must do in order to start running the app locally:
 
   ```
-  $ git clone https://github.com/DjCooGie/oQLo.git
-  $ cd oQLo/
+  $ git clone https://github.com/Bryan4real/InstaClone.git
+  $ cd InstaClone/
   ```
   * create a virtual environment
   * Activate the virtual environment
@@ -55,21 +55,17 @@ A Django generated app using the idea of Instagram with functionalities: User; s
   * ` (virtual)$ python3.6 manage.py migrate `
   * ` python3.6 manage.py createsuperuser `
 
- ```
-  $ python3.6 manage.py test myqlo (To run tests)
 
- ```
- 
 Launch the application locally by running the command
-     
-  ```
-  $ python3.6 manage.py runserver
 
   ```
-  
-   
+  $ python3 manage.py runserver
+
+  ```
+
+
 ## Technologies Used
-  * [Python version 3.8.0](https://www.python.org/) . 
+  * [Python version 3.6.0](https://www.python.org/) .
   * [Django (django modules)](https://docs.djangoproject.com/en/3.0/intro/tutorial01/).
   * PSQL database.
   * Javascript (jQuery)
@@ -80,16 +76,16 @@ Launch the application locally by running the command
 No known bugs
 
 ## Site Live Link
-[https://evan-qlo-ups.herokuapp.com/](https://evan-qlo-ups.herokuapp.com/)
+[https://https://forge-stagram.herokuapp.com/)
 
 #### Collaborate
 >Incase of any questions, problems or ideas concerning the app, feel free to reach out to me:
->>Github: [Evans Nyambane](https://github.com/DjCooGie)
->>Email: evansonchagwa01@gmail.com
+>>Github: [Brian Mwiruki](https://github.com/DjCooGie)
+>>Email: mwiruki@outlook.com
 
 #### License
 MIT
-&copy;2020 Evans Nyambane
+&copy;2020 Brian Mwiruki
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -107,4 +103,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
