@@ -1,1 +1,1 @@
-web: gunicorn ForgeStagram.wsgi
+web: gunicorn iclone.wsgi
