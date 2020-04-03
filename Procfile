@@ -1,1 +1,1 @@
-web: gunicorn iclone.wsgi
+web: gunicorn iclone.wsgi --log-file -
